@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon 2_express_server_index.js",
+    "start2": "node --watch 3_request_types_index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.10",
     "swagger": "^0.7.5"
   }
 }
