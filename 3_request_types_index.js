@@ -12,11 +12,17 @@ server.get('/user', (req, res) => {
 });
 
 server.post('/user', (request, response) => {
-    // validation
-    // db lo insert chastham
-    response.status(201).json({
-        message: "User register successfully"
-    });
+    try {
+        // validation
+        // db lo insert chastham
+        response.status(201).json({
+            message: "User register successfully"
+        });
+    } catch (e) {
+        response.status(500).json({
+            message: "something went wrong"
+        });
+    }
 });
 
 server.put('/user', (request, response) => {
